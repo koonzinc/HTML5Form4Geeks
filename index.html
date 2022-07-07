@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+
+    <title>HTML5 Form</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="row bg-light border rounded-top mt-5">
+            <div class="col-12 mt-3 mb-2">
+                <h2>Payment form example</h2>
+            </div>
+        </div>
+
+        <div class="row bg-white border border-top-0 border-bottom-0">
+            <div class="col-12 mt-4 mb-2">
+                <div class="alert alert-danger">Some fields are missing</div>
+            </div>
+        </div>
+
+        <div class="row bg-white border border-top-0 border-bottom-0">
+            <div class="col-5">
+                <label for="card#">Card #</label><br>
+                <input class="border rounded pl-3" style="width: 100%;" type="text" id="card#" maxlength="16" placeholder="XXXXXXXXXXXXXXXX">
+            </div>
+            <div class="col-3">
+                <label for="cvc#">CVC #</label><br>
+                <input class="border rounded pl-3" style="width: 100%;" type="text" id="cvc#" maxlength="4" placeholder="0000">
+            </div>
+            <div class="col-4">
+                <label for="amount">CVC #</label><br>
+                <input class="border rounded pl-3" style="width: 100%;" type="text" id="amount" placeholder="Amount">
+            </div>
+        </div>
+
+        <div class="row bg-white border border-top-0 border-bottom-0">
+            <div class="col-6 my-3">
+                <label for="fname">First Name</label><br>
+                <input class="border rounded" style="width: 100%;" type="text" id="fname">
+            </div>
+            <div class="col-6 my-3">
+                <label for="lname">Last Name</label><br>
+                <input class="border rounded" style="width: 100%;" type="text" id="lname">
+            </div>
+        </div>
+
+        <div class="row bg-white border border-top-0 border-bottom-0">
+            <div class="col-6 ">
+                <label for="city">City</label><br>
+                <input type="text" class="border rounded" style="width: 100%;" id="city">
+            </div>
+            <div class="col-3 ">
+                <label for="state">State</label><br>
+                <select id="state" name="states" class="border rounded" style="width: 100%;">
+                    <option value="">Pick a state</option>
+                    <option value="AZ">AZ</option>
+                    <option value="FL">FL</option>
+                    <option value="NY">NY</option>
+                    <option value="CA">CA</option>
+                  </select>
+            </div>
+            <div class="col-3">
+                <label for="zip">Postal Code</label><br>
+                <input type="text" class="border rounded" style="width: 100%;" id="zip">
+            </div>
+        </div>
+
+        <div class="row bg-white border border-top-0 border-bottom-0">
+            <div class="col-4 my-3 ">
+                <label for="payment">We Accept:</label><br>
+                <input type="radio" id="mastercard"><span class="glyphicon glyphicon-envelope"></span>
+                <input type="radio" id="visa"><span class="glyphicon glyphicon-envelope"></span>
+                <input type="radio" id="discover"><span class="glyphicon glyphicon-envelope"></span>
+                <input type="radio" id="amex"><span class="glyphicon glyphicon-envelope"></span>
+                
+            </div>
+            <div class="col-6 offset-2 my-3 ">
+                <label for="message">Message</label><br>
+                <textarea class="border rounded" style="width: 100%;" name="message" id="message" cols="30" rows="3"></textarea>
+                <p style="font-size: 10px; color:gray">Add any notes here.</p>
+            </div>
+        </div>
+
+        <div class="row bg-light border rounded-bottom">
+            <div class="col-3 offset-9 mt-3 mb-2">
+                <button class="btn btn-secondary mb-2">Cancel</button>
+                <input class="btn btn-primary mb-2" type="submit">
+            </div>
+        </div>
+
+      </div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
